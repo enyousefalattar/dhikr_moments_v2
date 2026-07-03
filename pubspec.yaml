@@ -1,0 +1,47 @@
+name: dhikr_moments_v2
+description: "Dhikr Moments - Your daily spiritual companion"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI & Core
+  cupertino_icons: ^1.0.8
+  shared_preferences: ^2.2.0
+  hijri: ^3.0.1
+  intl: ^0.19.0
+
+  # Notifications
+  flutter_local_notifications: ^17.0.0
+  timezone: ^0.9.2
+
+  # Prayer Times
+  adhan: ^2.0.0
+  geolocator: ^12.0.0
+
+  # Removed all geolocator, geocoding, compass packages for now
+  # Will add qibla and prayer times later using stable packages
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.13.1
+  flutter_lints: ^6.0.0
+
+flutter_launcher_icons:
+  android: "ic_launcher"
+  ios: false # تم التعديل هنا
+  image_path: "assets/icon/icon.png"
+  min_sdk_android: 21
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/data/azkar.json
+    - assets/icon/icon.png
