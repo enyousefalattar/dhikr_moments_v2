@@ -1,0 +1,7 @@
+{
+  "name": "ملخص الذكاء الاصطناعي",
+  "type": "ai",
+  "type_config": {
+    "ai_type": "summary"
+  }
+}
